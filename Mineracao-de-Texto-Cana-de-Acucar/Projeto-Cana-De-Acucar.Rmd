@@ -1,0 +1,388 @@
+---
+title: 'Analise das noticias relacionadas a  cana-de-açúcar | Aluno: Gabriel Cândido Ferreira Dias'
+output:
+  pdf_document: default
+  html_notebook: default
+---
+
+# Tarefa 1
+
+**Parte 1:**
+
+# Sobre a Base de Dados
+
+A União da Indústria de Cana-de-Açúcar (UNICA) e a Agência Brasileira de Promoção de Exportações e Investimentos (Apex-Brasil) desenvolveram este site para servir como um hub global de informações sobre produtos da cana-de-açúcar e sua contribuição para benefícios econômicos, ambientais e sociais em países ao redor do mundo. Este site faz parte de uma parceria maior entre a UNICA e a Apex-Brasil, visando promover os benefícios do etanol de cana-de-açúcar brasileiro na América do Norte, Europa e Ásia. Os dados serão extraídos por meio de web scraping. Em resumo, o web scraping é uma técnica poderosa para extrair dados da web, mas requer um planejamento cuidadoso, conhecimento técnico e capacidade de se adaptar às mudanças nas páginas da web de origem. Utilizarei robôs de software para acessar e interagir com a página web ([UNICA Notícias](https://unica.com.br/noticias/)). Será necessário utilizar uma ferramenta mais poderosa, como o Selenium, para interagir com os inputs da página, a fim de extrair os dados necessários. Esses dados são apresentados em forma de texto.
+
+Um pequeno exemplo de um trecho de uma das notícias da base de dados. Observação: este web scraping extrai apenas uma notícia específica. Ainda utilizarei o Selenium para acessar os inputs da página de notícias e obter todas as notícias relacionadas à cana-de-açúcar mais recentes.
+
+# Parte 2:
+
+- **Classificação de Texto:** O objetivo é realizar a associação automática de documentos de texto a uma determinada classe, pertencente a um conjunto pré-definido de classes, tais como "Produção de Cana-de-Açúcar", "Processamento de Cana-de-Açúcar", "Mercado de Açúcar" e "Sustentabilidade na Indústria de Cana-de-Açúcar".
+
+- **Agrupamento de Documentos (Clustering):** Pode ser usado para agrupar automaticamente documentos de texto semelhantes em clusters ou grupos. Primeiramente, coletamos um conjunto de documentos extraídos através do web scraping sobre a cana-de-açúcar e a indústria sucroenergética. Pré-processamento de texto: limpamos e preparamos os textos para análise, incluindo a remoção de palavras comuns que não agregam significado. Em seguida, verificamos se há alta similaridade entre os documentos pertencentes a um mesmo cluster ou baixa similaridade entre elementos que pertencem a clusters diferentes.
+
+- **Extração da Informação:** Aplicaremos técnicas para interpretar a informação contida nos textos e extrair partes relevantes, como preço da cana, transporte, preço do etanol e gasolina, e informações sobre as safras.
+
+- **Descoberta de Associações:** Relacionaremos palavras, como "cana-de-açúcar" -> "etanol" / "safra" -> "cana-de-açúcar". Essa técnica também nos auxiliará na classificação de texto, pois textos semelhantes não necessariamente precisam ter as mesmas palavras.
+
+- **Análise de Sentimentos (Sentiment Analysis):** Filtraremos esses textos para tentar identificar a opinião, emoção e sentimento das pessoas sobre a cana-de-açúcar e sucroenergético. O objetivo é classificar as opiniões das pessoas em "positiva", "negativa" ou "neutra".
+
+- **Casamento de Esquemas (Schema Matching):** Mapearemos automaticamente os elementos que representam a mesma informação em ambos os esquemas, separando as informações em blocos distintos. Com essa etapa concluída, poderemos realizar análises mais detalhadas de cada bloco, pois possuirão informações semelhantes.
+
+- **Recuperação da Informação (Information Retrieval):** Ranquearemos e localizaremos documentos relevantes em uma coleção, de acordo com as palavras-chave digitadas pelo usuário. Para isso, precisaremos de indexação de informações, como índices invertidos, uma tabela hash de palavras, onde cada elemento possui uma lista que aponta para os IDs dos documentos onde os termos aparecem. Com o uso desse tipo de estrutura, resolveremos consultas como "documentos com a palavra safra", possibilitando a criação de sistemas de busca voltados especificamente para a cana-de-açúcar.
+
+# Parte 3:
+
+Dado que os dados são textos, precisamos realizar alguns preparativos para a manipulação destes dados.
+
+- **Preparação:** Assim como discutido anteriormente, manipularemos dados textuais e, portanto, precisaremos utilizar o pacote `stringr` para preparar strings para processamento, bem como as funções do pacote `tidytext` para tokenizar textos e remover palavras irrelevantes. Inicialmente, leremos os textos usando a função `read_dir()`, que retorna um vetor de caracteres. Em seguida, removeremos as palavras irrelevantes dos textos utilizando a função `anti_join` do pacote `dplyr`, permitindo-nos eliminar palavras desnecessárias como "a", "e", "com", etc.
+
+Observação: Essas preparações devem ser realizadas para todas as técnicas mencionadas na Parte 2.
+
+- **Classificação de Texto:** Para analisar o vetor de caracteres, utilizaremos a função `count("nome da tabela", sort = TRUE)`, que verifica a frequência de palavras. Com essa informação, poderemos classificar o texto com base em temas como produção, preço, processamento e sustentabilidade.
+
+- **Agrupamento de Documentos:** Também usaremos a frequência das palavras para verificar se os textos possuem alta ou baixa similaridade. Compararemos a frequência de palavras de um determinado texto com outro para avaliar a similaridade.
+
+- **Extração de Informações:** Analisaremos o vetor de caracteres e coletaremos dados sobre preço da cana, transporte, preço do etanol e gasolina, e informações sobre as safras.
+
+- **Análise de Sentimento:** Utilizando o pacote `tidytext`, que contém diversos léxicos de sentimento, vincularemos cada palavra a um determinado sentimento. Isso nos permitirá caracterizar cada palavra como "positiva", "negativa" ou "neutra". Em seguida, avaliaremos a frequência desses sentimentos e classificaremos o texto de acordo com a prevalência.
+
+- **Descoberta de Associações:** Relacionaremos palavras, como "cana-de-açúcar" -> "etanol" / "safra" -> "cana-de-açúcar". Essa técnica também nos auxiliará na classificação de texto, pois textos semelhantes não necessariamente precisam ter as mesmas palavras.
+
+
+
+# Tarefa 2:
+
+**Extração de dados**
+
+```{r}
+if (!requireNamespace("rvest", quietly = TRUE)) {
+  install.packages("rvest")
+}
+
+library(rvest)
+
+
+urls <- c(
+  "https://unica.com.br/noticias/palmeiras-e-primeiro-time-a-conquistar-o-selo-energia-verde/", "https://unica.com.br/noticias/lula-defende-aproximacao-com-africa-por-energia-renovavel/", "https://unica.com.br/noticias/mercado-de-etanol-hidratado-reacende-e-vendas-crescem-25/", "https://unica.com.br/noticias/frente-parlamentar-do-etanol-fortalecera-agenda-ambiental/", "https://unica.com.br/noticias/colombia-se-aproxima-do-brasil-pelo-etanol/", "https://unica.com.br/noticias/setor-sucroenergetico-representa-32-do-superavit-de-sao-paulo/", "https://unica.com.br/noticias/usinas-com-selo-energia-verde-abastecem-6-milhoes-de-residencias/", "https://unica.com.br/noticias/industria-ve-etanol-como-principal-rota-para-descarbonizacao/", "https://unica.com.br/noticias/transicao-energetica-e-destaque-em-congresso-da-abag/", "https://unica.com.br/noticias/renovabio-atinge-marca-de-100-milhoes-de-cbios-emitidos/", "https://unica.com.br/noticias/etanol-ganha-competitividade-na-1a-quinzena-de-julho/", "https://unica.com.br/noticias/projeto-cria-cenario-para-alavancar-mobilidade-sustentavel/", "https://unica.com.br/noticias/ethanol-talks-e-destaque-em-semana-da-energia-no-g20/", "https://unica.com.br/noticias/safra-fecha-primeiro-trimestre-com-crescimento-de-1151/", "https://unica.com.br/noticias/livro-destaca-contribuicao-do-etanol-no-contexto-do-renovabio/", "https://unica.com.br/noticias/nota-aprovacao-reforma-tributaria/", "https://unica.com.br/noticias/etanol-tem-a-maior-competitividade-desde-junho/", "https://unica.com.br/noticias/setor-sucroenergetico-amplia-em-7-oferta-de-energia-eletrica/", "https://unica.com.br/noticias/vendas-de-etanol-mantem-alta-e-somam-18-bi-de-litros-em-agosto/"
+)
+
+
+scrape_and_save <- function(url, filename) {
+ 
+  page <- read_html(url)
+  
+ 
+  text <- page %>%
+    html_nodes(".entry-content p") %>%
+    html_text() %>%
+    paste(collapse = "\n")
+  
+  
+  write.csv(data.frame(text), file = filename, row.names = FALSE)
+  
+ 
+  cat("\nTexto da notícia foi salvo em", filename, "\n")
+}
+
+
+for (i in 1:length(urls)) {
+  scrape_and_save(urls[i], paste0("noticia_", i, ".csv"))
+}
+
+
+
+```
+
+**Manipulação dos dados**
+
+Aqui pegamos os dados extraidos e lemos esses dados , passamos tais dados para uma tabela, e fizemos 3 colunas de contagem. Quantas vezes aparecu a palavra "etanol", "aumento" e "queda". Essas palavras foram escolhidas porque servem para uma possivel analise de precificação da cana de açucar.
+
+```{r}
+
+library(tidyverse)
+library(tidytext)
+library(readtext)
+library(SnowballC)
+library(stringr)  
+
+ler_arquivos_csv <- function(diretorio) {
+ 
+  arquivos <- list.files(path = diretorio, pattern = ".csv", full.names = TRUE)
+  
+  lista_de_dataframes <- lapply(arquivos, function(arquivo) {
+    df <- read_csv(arquivo)
+    df$doc_id <- basename(arquivo) 
+    return(df)
+  })
+  
+
+  textos <- bind_rows(lista_de_dataframes)
+  
+  textos <- textos %>%
+    select(doc_id, everything())
+  
+  textos <- textos %>%
+    mutate(n_etanol = str_count(text, "etanol"))
+  
+  textos <- textos %>%
+    mutate(n_aumento = str_count(text, "aumento"))
+   
+  textos <- textos %>%
+    mutate(n_queda = str_count(text, "queda"))
+  
+  return(textos)
+}
+
+diretorio <- "C:/Users/gabri_knygjto/OneDrive/Área de Trabalho/EstudosR/Identificaçao_base_dados"
+
+
+textos_noticia <- ler_arquivos_csv(diretorio)
+
+```
+
+**Tokenização**
+
+```{r}
+
+library(tidytext)
+
+
+textos_noticia_tokenizados <- textos_noticia %>%
+  unnest_tokens(word, text)
+
+
+head(textos_noticia_tokenizados)
+
+
+```
+
+**ngramas**
+
+```{r}
+
+textos_noticia_tokenizadas_trigramas <- textos_noticia %>%
+  unnest_tokens(trigram, text, token = "ngrams", n = 3) %>% 
+  select(trigram)
+
+
+head(textos_noticia_tokenizadas_trigramas)
+
+```
+
+**Retirada de Stopwords**
+
+```{r}
+
+library(tidyverse)
+library(tidytext)
+
+
+stop_words_pt_br_custom <- c(
+  "de", "a", "ó", "That", "e", "fazer", "pai", "eles", "hum", "pára", "é", "com", "não", "uma", "sistema operacional",
+  "não", "se", "n / D", "por", "mais", "como", "dos", "como", "mas", "foi", "ao", "ele", "das", "tem", "a", "seu", "sua",
+  "ou", "Ser", "quando", "muito", "há", "não", "já", "está", "UE", "também", "então", "pelo", "pela", "comeu", "isso",
+  "ela", "entre", "era", "depois", "sem", "mesmo", "aos", "ter", "seus", "quem", "nas", "meu", "esse", "eles", "estão",
+  "você", "tinha", "foram", "essa", "número", "nem", "suas", "meu", "como", "minha", "têm", "numa", "pelos pelos", "elas",
+  "havia", "seja", "qual", "será", "nós", "tenho", "o", "deles", "essas", "esses", "pelas", "este", "fosse", "deletar",
+  "você", "você", "vocês", "vocês", "eles", "meu", "meus", "teu", "tua", "teus", "tuas", "nosso", "nossa", "nossos",
+  "nossos", "dela", "delas", "esta", "estes", "estes", "aquele", "aquela", "aqueles", "aqueles", "isto", "aquilo", "estou",
+  "está", "estamos", "estão", "estive", "Esteve", "estivemos", "houve", "Houvemos", "houve", "há", "houvéramos", "haja",
+  "tenhamos", "hajam", "havia", "houvéssemos", "houve", "haja", "teremos", "hajam", "hajaei", "haverá", "teremos",
+  "haveráão", "haveria", "haveríamos", "aconteceriam", "sou", "somos", "são", "era", "éramos", "eram", "fui", "foi",
+  "fomos", "foram", "para", "foramos", "seja", "sejamos", "seja", "fosse", "fôssemos", "seria", "para", "formulários",
+  "primeiro", "serei", "será", "seremos", "serão", "seria", "seríamos", "seria", "tenho", "tem", "temos", "tem", "tinha",
+  "nós", "tinha", "ativo", "teve", "isso", "tive", "tera", "tivéramos", "tenha", "tenhamos", "tenho", "eu tive",
+  "tivéssemos", "precisam", "tiver", "teremos", "ter", "terei", "terá", "teremos", "terá", "teria", "teríamos", "permanecer","do", "que"
+)
+
+
+textos_noticia_tokenizados <- textos_noticia %>%
+  unnest_tokens(word, text)
+
+
+textos_noticia_limpos <- textos_noticia_tokenizados %>%
+  anti_join(data.frame(word = stop_words_pt_br_custom), by = "word")
+
+head(textos_noticia_limpos)
+
+
+```
+
+**Word Stemming**
+
+```{r}
+
+library(SnowballC)
+
+
+textos_noticia_wordstemning <- textos_noticia_limpos %>%
+  mutate(word_stem = wordStem(word))
+
+head(textos_noticia_wordstemning)
+
+```
+
+**Resultado Final da tarefa 2**
+
+```{r}
+# Primeiro, carregue todas as bibliotecas necessárias
+library(tidyverse)
+library(tidytext)
+library(readtext)
+library(SnowballC)
+library(stringr)
+
+# Defina a função para ler arquivos CSV no diretório especificado
+ler_arquivos_csv <- function(diretorio) {
+  arquivos <- list.files(path = diretorio, pattern = ".csv", full.names = TRUE)
+  lista_de_dataframes <- lapply(arquivos, function(arquivo) {
+    df <- read_csv(arquivo)
+    df$doc_id <- basename(arquivo)
+    return(df)
+  })
+  textos <- bind_rows(lista_de_dataframes)
+  textos <- textos %>%
+    select(doc_id, everything())
+  
+  textos <- textos %>%
+    mutate(n_etanol = str_count(text, "etanol"))
+  
+  textos <- textos %>%
+    mutate(n_aumento = str_count(text, "aumento"))
+   
+  textos <- textos %>%
+    mutate(n_queda = str_count(text, "queda"))
+  return(textos)
+}
+
+# Diretório onde estão os arquivos CSV
+diretorio <- "C:/Users/gabri_knygjto/OneDrive/Área de Trabalho/EstudosR/Identificaçao_base_dados"
+
+# Use a função ler_arquivos_csv para ler os textos dos discursos em CSV
+textos_noticia <- ler_arquivos_csv(diretorio)
+
+# Tokenização dos discursos
+textos_noticia_tokenizados <- textos_noticia %>%
+  unnest_tokens(word, text)
+
+# Lista de palavras irrelevantes personalizadas em português
+stop_words_pt_br_custom <- c(
+  "de", "a", "ó", "That", "e", "fazer", "pai", "eles", "hum", "pára", "é", "com", "não", "uma", "sistema operacional",
+  "não", "se", "n / D", "por", "mais", "como", "dos", "como", "mas", "foi", "ao", "ele", "das", "tem", "a", "seu", "sua",
+  "ou", "Ser", "quando", "muito", "há", "não", "já", "está", "UE", "também", "então", "pelo", "pela", "comeu", "isso",
+  "ela", "entre", "era", "depois", "sem", "mesmo", "aos", "ter", "seus", "quem", "nas", "meu", "esse", "eles", "estão",
+  "você", "tinha", "foram", "essa", "número", "nem", "suas", "meu", "como", "minha", "têm", "numa", "pelos pelos", "elas",
+  "havia", "seja", "qual", "será", "nós", "tenho", "o", "deles", "essas", "esses", "pelas", "este", "fosse", "deletar",
+  "você", "você", "vocês", "vocês", "eles", "meu S", "meus", "teu", "tua", "teus", "tuas", "nosso", "nossa", "nossos",
+  "nossos", "dela", "delas", "esta", "estes", "estes", "aquele", "aquela", "aqueles", "aqueles", "isto", "aquilo", "estou",
+  "está", "estamos", "estão", "estive", "Esteve", "estivemos", "houve", "Houvemos", "houve", "há", "houvéramos", "haja",
+  "tenhamos", "hajam", "havia", "houvéssemos", "houve", "haja", "teremos", "hajam", "hajaei", "haverá", "teremos",
+  "haveráão", "haveria", "haveríamos", "aconteceriam", "sou", "somos", "são", "era", "éramos", "eram", "fui", "foi",
+  "fomos", "foram", "para", "foramos", "seja", "sejamos", "seja", "fosse", "fôssemos", "seria", "para", "formulários",
+  "primeiro", "serei", "será", "seremos", "serão", "seria", "seríamos", "seria", "tenho", "tem", "temos", "tem", "tinha",
+  "nós", "tinha", "ativo", "teve", "isso", "tive", "tera", "tivéramos", "tenha", "tenhamos", "tenho", "eu tive",
+  "tivéssemos", "precisam", "tiver", "teremos", "ter", "terei", "terá", "teremos", "terá", "teria", "teríamos", "permanecer","do", "que"
+)
+
+# Remoção de palavras irrelevantes
+textos_noticia_limpos <- textos_noticia_tokenizados %>%
+  anti_join(data.frame(word = stop_words_pt_br_custom), by = "word")
+
+# Redução de palavras ao radical
+textos_noticia_wordstemning <- textos_noticia_limpos %>%
+  mutate(word_stem = wordStem(word))
+
+# Tokenização de trigramas
+textos_noticia_tokenizadas_trigramas <- textos_noticia %>%
+  unnest_tokens(trigram, text, token = "ngrams", n = 3) %>% 
+  select(trigram)
+
+# Combine todas as informações em 'noticia_final'
+noticia_final <- textos_noticia_wordstemning %>%
+  bind_rows(textos_noticia_tokenizadas_trigramas)
+
+
+```
+
+
+# Tarefa 3:
+
+**Análise de Sentimentos**
+
+Para realizarmos uma análise precisa da classificação das notícias voltadas para os produtores, foi necessário criar um conjunto de palavras específicas destinadas aos produtores de cana-de-açúcar.
+
+Sentimento Positivo:
+1. Sucesso
+2. Prosperidade
+3. Rentabilidade
+4. Eficiência
+5. Desenvolvimento
+6. Crescimento
+7. Qualidade
+8. Inovação
+9. Sustentabilidade
+10. Lucro
+11. Boa safra
+12. Rendimento
+13. Modernização
+14. Oportunidade
+15. Melhoria
+16. Colheita abundante
+17. Desempenho excepcional
+18. Mercado em ascensão
+19. Boa
+20. Bom
+
+Sentimento Negativo:
+1. Pragas
+2. Perda
+3. Prejuízo
+4. Desastre
+5. Estresse financeiro
+6. Dificuldades
+7. Condições adversas
+8. Riscos
+9. Regulamentações rigorosas
+10. Falha na safra
+11. Concorrência intensa
+12. Mudanças climáticas
+13. Escassez de água
+14. Impactos ambientais
+15. Preços baixos
+16. Problemas de mercado
+17. Safra ruim
+18. Declínio na produtividade
+19. Ruim
+
+
+```{r}
+library(tidyverse)
+library(tidytext)
+
+palavras_positivas <- c("sucesso", "prosperidade", "rentabilidade", "eficiência", "desenvolvimento", "crescimento", "qualidade", "inovação", "sustentabilidade", "lucro", "boa", "bom")
+palavras_negativas <- c("pragas", "perda", "prejuízo", "desastre", "estresse financeiro", "dificuldades", "condições adversas", "riscos", "regulamentações rigorosas", "falha na safra", "concorrência intensa", "mudanças climáticas", "escassez de água", "impactos ambientais", "preços baixos", "problemas de mercado", "safra ruim", "declínio")
+
+analise_sentimento <- textos_noticia_limpos %>%
+  inner_join(data_frame(word = c(palavras_positivas, palavras_negativas)), by = "word") %>%
+  mutate(sentimento = case_when(
+    word %in% palavras_positivas ~ "Positivo",
+    word %in% palavras_negativas ~ "Negativo",
+    TRUE ~ "Neutro"
+  ))
+
+print(analise_sentimento)
+
+
+
+
+```
+
+
+
+
+
+
+
+
+

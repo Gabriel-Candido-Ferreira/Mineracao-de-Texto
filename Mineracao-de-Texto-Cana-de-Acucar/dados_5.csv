@@ -1,0 +1,414 @@
+"Texto"
+"document.documentElement.className = 'js';
+	var et_site_url='https://unica.com.br';var et_post_id='20288';function et_core_page_resource_fallback(a,b){""undefined""===typeof b&&(b=a.sheet.cssRules&&0===a.sheet.cssRules.length);b&&(a.onerror=null,a.onload=null,a.href?a.href=et_site_url+""/?et_core_page_resource=""+a.id+et_post_id:a.src&&(a.src=et_site_url+""/?et_core_page_resource=""+a.id+et_post_id))}
+Colômbia se aproxima do Brasil pelo etanol - UNICA{""@context"":""https://schema.org"",""@graph"":[{""@type"":""WebPage"",""@id"":""https://unica.com.br/noticias/colombia-se-aproxima-do-brasil-pelo-etanol/"",""url"":""https://unica.com.br/noticias/colombia-se-aproxima-do-brasil-pelo-etanol/"",""name"":""Colômbia se aproxima do Brasil pelo etanol - UNICA"",""isPartOf"":{""@id"":""https://unica.com.br/#website""},""primaryImageOfPage"":{""@id"":""https://unica.com.br/noticias/colombia-se-aproxima-do-brasil-pelo-etanol/#primaryimage""},""image"":{""@id"":""https://unica.com.br/noticias/colombia-se-aproxima-do-brasil-pelo-etanol/#primaryimage""},""thumbnailUrl"":""https://unica.com.br/wp-content/uploads/2023/08/Etanol-governadores-Colombia.jpeg"",""datePublished"":""2023-08-22T21:16:35+00:00"",""dateModified"":""2023-08-22T21:16:35+00:00"",""description"":""Presidente da Federação de Governadores quer usar experiência brasileira para incentivar expansão da produção de etanol na Colômbia."",""breadcrumb"":{""@id"":""https://unica.com.br/noticias/colombia-se-aproxima-do-brasil-pelo-etanol/#breadcrumb""},""inLanguage"":""pt-BR"",""potentialAction"":[{""@type"":""ReadAction"",""target"":[""https://unica.com.br/noticias/colombia-se-aproxima-do-brasil-pelo-etanol/""]}]},{""@type"":""ImageObject"",""inLanguage"":""pt-BR"",""@id"":""https://unica.com.br/noticias/colombia-se-aproxima-do-brasil-pelo-etanol/#primaryimage"",""url"":""https://unica.com.br/wp-content/uploads/2023/08/Etanol-governadores-Colombia.jpeg"",""contentUrl"":""https://unica.com.br/wp-content/uploads/2023/08/Etanol-governadores-Colombia.jpeg"",""width"":1600,""height"":1200},{""@type"":""BreadcrumbList"",""@id"":""https://unica.com.br/noticias/colombia-se-aproxima-do-brasil-pelo-etanol/#breadcrumb"",""itemListElement"":[{""@type"":""ListItem"",""position"":1,""name"":""Início"",""item"":""https://unica.com.br/""},{""@type"":""ListItem"",""position"":2,""name"":""Colômbia se aproxima do Brasil pelo etanol""}]},{""@type"":""WebSite"",""@id"":""https://unica.com.br/#website"",""url"":""https://unica.com.br/"",""name"":""UNICA"",""description"":""União da Indústria de Cana-de-Açúcar"",""publisher"":{""@id"":""https://unica.com.br/#organization""},""potentialAction"":[{""@type"":""SearchAction"",""target"":{""@type"":""EntryPoint"",""urlTemplate"":""https://unica.com.br/?s={search_term_string}""},""query-input"":""required name=search_term_string""}],""inLanguage"":""pt-BR""},{""@type"":""Organization"",""@id"":""https://unica.com.br/#organization"",""name"":""UNICA – União da Indústria de Cana-de-Açúcar"",""url"":""https://unica.com.br/"",""logo"":{""@type"":""ImageObject"",""inLanguage"":""pt-BR"",""@id"":""https://unica.com.br/#/schema/logo/image/"",""url"":""http://unica.com.br/wp-content/uploads/2019/06/logo.png"",""contentUrl"":""http://unica.com.br/wp-content/uploads/2019/06/logo.png"",""width"":194,""height"":49,""caption"":""UNICA – União da Indústria de Cana-de-Açúcar""},""image"":{""@id"":""https://unica.com.br/#/schema/logo/image/""},""sameAs"":[""https://www.facebook.com/unica.cana"",""https://twitter.com/UNICA_cana"",""https://www.instagram.com/unica.cana/"",""https://www.linkedin.com/company/unicacana/"",""https://www.youtube.com/user/UNICAcana?blend=3""]}]}
+window._wpemojiSettings = {""baseUrl"":""https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/"",""ext"":"".png"",""svgUrl"":""https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/"",""svgExt"":"".svg"",""source"":{""concatemoji"":""https:\/\/unica.com.br\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.3.1""}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case""flag"":return n(e,""\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f"",""\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f"")?!1:!n(e,""\ud83c\uddfa\ud83c\uddf3"",""\ud83c\uddfa\u200b\ud83c\uddf3"")&&!n(e,""\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f"",""\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f"");case""emoji"":return!n(e,""\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff"",""\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff"")}return!1}function f(e,t,n){var r=""undefined""!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement(""canvas""),a=r.getContext(""2d"",{willReadFrequently:!0}),o=(a.textBaseline=""top"",a.font=""600 32px Arial"",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement(""script"");t.src=e,t.defer=!0,i.head.appendChild(t)}""undefined""!=typeof Promise&&(o=""wpEmojiSettingsSupports"",s=[""flag"",""emoji""],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener(""DOMContentLoaded"",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if(""object""==typeof e&&""number""==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&""object""==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if(""undefined""!=typeof Worker&&""undefined""!=typeof OffscreenCanvas&&""undefined""!=typeof URL&&URL.createObjectURL&&""undefined""!=typeof Blob)try{var e=""postMessage(""+f.toString()+""(""+[JSON.stringify(s),u.toString(),p.toString()].join("","")+""));"",r=new Blob([e],{type:""text/javascript""}),a=new Worker(URL.createObjectURL(r),{name:""wpTestEmojiSupports""});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],""flag""!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+!function(){const e={""cookieconsent_status"":{""value"":"""",""defaultValue"":""allow""}} || {},i=""dataLayer"" || ""dataLayer"",o=Object.keys(e),t={event:""beautiful_cookie_consent_initialized""};for(let i=0;i<o.length;i++)t[o[i]]=n(o[i])||e[o[i]].defaultValue,""dismiss""===t[o[i]]&&(t[o[i]]=""allow"");function n(e){const i=`; ${document.cookie}`.split(`; ${e}=`);if(2===i.length)return i.pop().split("";"").shift()}window[i]=window[i]||[],window[i].push(t)}();
+/* <![CDATA[ */
+var SS_DATA = {""ajaxurl"":""https:\/\/unica.com.br\/wp-admin\/admin-ajax.php""};
+var theme_data = {""themeLogo"":""""};
+/* ]]> */
+
+window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overlays=[];a2a_config.templates={};a2a_localize = {
+	Share: ""Compartilhar"",
+	Save: ""Salvar"",
+	Subscribe: ""Inscrever"",
+	Email: ""Email"",
+	Bookmark: ""Favoritos"",
+	ShowAll: ""Mostrar tudo"",
+	ShowLess: ""Mostrar menos"",
+	FindServices: ""Procurar serviço(s)"",
+	FindAnyServiceToAddTo: ""Encontrar rapidamente qualquer serviço para"",
+	PoweredBy: ""Serviço fornecido por"",
+	ShareViaEmail: ""Share via email"",
+	SubscribeViaEmail: ""Subscribe via email"",
+	BookmarkInYourBrowser: ""Adicionar aos favoritos"",
+	BookmarkInstructions: ""Press Ctrl+D or \u2318+D to bookmark this page"",
+	AddToYourFavorites: ""Adicionar a favoritos"",
+	SendFromWebOrProgram: ""Send from any email address or email program"",
+	EmailProgram: ""Email program"",
+	More: ""More&#8230;"",
+	ThanksForSharing: ""Thanks for sharing!"",
+	ThanksForFollowing: ""Thanks for following!""
+};
+
+/* <![CDATA[ */
+var et_frontend_js_params = {""ajax_url"":""https:\/\/unica.com.br\/wp-admin\/admin-ajax.php"",""ajax_nonce"":""a789194710""};
+/* ]]> */
+
+var sss_nonce_frontend = ""4a520eb81a""
+
+/* <![CDATA[ */
+var et_core_api_spam_recaptcha = {""site_key"":"""",""page_action"":{""action"":""colombia_se_aproxima_do_brasil_pelo_etanol""}};
+/* ]]> */
+
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js?v=next');
+
+        var url = window.location.origin + '?ob=open-bridge';
+        fbq('set', 'openbridge', '624567831787037', url);
+      fbq('init', '624567831787037', {}, {
+    ""agent"": ""wordpress-6.3.1-3.0.13""
+})
+    fbq('track', 'PageView', []);
+  
+
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '624567831787037');
+fbq('track', 'PageView');
+
+	
+
+	
+	
+			
+							
+					
+					
+						
+				
+							
+											Home
+Sobre
+Histórico e Missão
+	Equipe
+	Conselheiros
+	Sindicatos
+	Associadas
+	Código de Ética
+	Portal do Associado
+
+Setor
+Etanol
+	#VÁ DE ETANOL
+		Nova era da mobilidade
+	
+	Açúcar
+	Bioeletricidade
+	CBIO
+	Outros Produtos
+	Histórico do Setor
+
+Iniciativas
+Prêmio Energia Brasil
+	Renovabio
+	ApexBrasil
+	Ethanol Summit
+	Selo Energia Verde
+	Protocolo Agroambiental
+	Unica Fórum
+	Histórico de Iniciativas
+
+Comunicação
+Notícias
+	Publicações
+
+Unicadata
+Sugarcane.org
+Contato
+Imprensa
+
+English
+
+						
+							
+						
+					
+
+										
+						
+					
+					
+					
+				
+					Escolha uma Página
+					
+				
+							 
+			 
+			
+				
+					
+					
+					
+				
+			
+		
+	
+	
+    
+            
+                
+                    Notícias
+                
+            
+        
+    
+
+
+
+    
+        
+            
+                    
+                            Colômbia se aproxima do Brasil pelo etanol
+                         
+                        
+                            
+                                                                
+                                    EtanolInstitucionalInternacionalSetorSustentabilidade                                
+                                22 de agosto de 2023
+                                
+                                                                    
+                            
+                                                        
+                                
+                                                        
+                                A Colômbia quer usar o modelo brasileiro de adição de etanol à gasolina e também do uso direto nos tanques dos automóveis para alavancar a produção de cana-de-açúcar no país.
+Os colombianos já têm a experiência em adicionar o biocombustível à gasolina e chegaram a adotar o E10 até 2021, com o objetivo de reduzir os níveis de poluição nas grandes cidades e contribuir para os compromissos de emissão da Colômbia.
+Em reunião com representantes das indústrias brasileiras, o presidente da Federação Nacional de Governadores da Colômbia, Roberto Jairo Jaramillo Cardenas, disse ter ficado impactado com a experiência de 50 anos do Brasil com o etanol.
+Ele disse que volta ao seu país com a missão de incentivar as regiões aptas a ampliar o cultivo de cana-de-açúcar. “Isso pode ser uma solução em nível ambiental, social e econômico para muitas famílias colombianas”, disse Cardenas.
+“Mostramos aos representantes do governo colombiano o potencial dos biocombustíveis para a descarbonização do setor de transportes com o etanol. É uma rota que já existe, é conhecida e que certamente estará no caminho das células de hidrogênio, que é considerado o combustível do futuro pelas montadoras”, disse Evandro Gussi, presidente da União da Indústria da Cana-de-açúcar e Bioenergia.
+Dados do próprio governo colombiano mostram que o interesse de Cardenas no setor pode surtir efeitos promissores. Com apenas 15 usinas instaladas no país, a agroindústria da cana é responsável por produzir, sozinha, 0,6% do PIB nacional.
+Os atuais 240 mil hectares plantados com cana na Colômbia levaram às usinas pouco mais de 23 milhões de toneladas de matéria-prima em 2022. Mas, estudos do Ministério de Minas e Energia do país indicam a disponibilidade de 1,5 milhão de hectares aptos a receber as lavouras.
+A Colômbia tem ensaiado uma retomada na produção de cana nos últimos quatro anos, depois de ter alcançado o recorde de processamento em 2018. Contudo, o país sofreu por dois anos consecutivos com o excesso de chuvas provocado pela La Niña, o que tem mantido o volume relativamente estável desde 2019.
+O clima adverso nos últimos anos levou o país a reduzir sua produção de etanol. No ano passado foram pouco mais de 347 milhões de litros, volume 12,5% inferior ao ano anterior. Em 2023, a produção alcançou 145 milhões de litros de janeiro a maio, um corte de 7% em relação ao mesmo período do ano passado.
+Com o menor volume, a política de adição de etanol à gasolina sofreu mudanças. Em 2016, a Colômbia deu início à política de adição de 6% de etanol à gasolina. A mistura subiu para 8% em 2017, alcançou 10% a partir de 2018 e se manteve nesse patamar até meados de 2021.
+Em abril daquele ano, no entanto, o governo colombiano criou uma resolução reduzindo o mandato na mistura para 4%, em meio aos problemas climáticos, aumento das importações e necessidade política de controlar a inflação. A medida acabou por desencorajar novos investimentos na produção.
+Agora, a expectativa é que o E4 seja mantido até novembro de 2023 e suba para 6% em dezembro. Os planos do governo indicam que a mistura de 8% seja feita a partir de janeiro de 2024, para finalmente voltar aos 10% em fevereiro do ano que vem.
+                            
+                        
+                     
+
+                
+                    
+                        Publicações Recentes
+                        
+                                                                
+                                            
+                                                
+                                        
+                                        
+                                            
+                                                Etanol tem a maior competitividade desde junho
+                                            
+                                        
+                                    
+                                            
+                                                
+                                        
+                                        
+                                            
+                                                Setor sucroenergético amplia em 7% oferta de energia elétrica
+                                            
+                                        
+                                    
+                                            
+                                                
+                                        
+                                        
+                                            
+                                                Vendas de etanol mantém alta e somam 1,8 bi de litros em agosto
+                                            
+                                        
+                                    
+                    
+
+                
+            
+
+
+
+	
+
+
+			
+    
+		Home
+Sobre a Unica
+Setor
+Iniciativas
+Comunicação
+Unicadata
+Contato
+ 			                
+
+		       
+    
+
+		
+				
+					
+				Copyright 2022 · Todos os direitos reservados - Unica					
+						
+					
+						
+				
+			 
+
+
+	 
+
+	
+jQuery(function($) {
+	$("".wpcf7-submit"").click(function(event) {
+		var messageOutput = $(this).closest(""form"").children("".wpcf7-response-output"");
+		$(document).ajaxComplete(function() {
+			var message = $(messageOutput).html();
+			var validMessage = function(){
+				swal({
+					type: ""success"",
+					title: """",
+					text: message,
+					timer: 3000,
+					showConfirmButton: false
+				});
+			};
+			var errorMessage = function(){
+				swal({
+					type: ""warning"",
+					title: """",
+					text: message,
+					timer: 3000,
+					showConfirmButton: false
+				});
+			};
+			setSwal = $("".wpcf7-response-output"").hasClass(""wpcf7-validation-errors"") ? ""alert"" : ""success"";
+			if ( setSwal === ""alert"" ) { errorMessage() };
+			if ( setSwal === ""success"" ) { validMessage() };
+		});
+	});
+});
+
+        document.addEventListener( 'wpcf7mailsent', function( event ) {
+        if( ""fb_pxl_code"" in event.detail.apiResponse){
+          eval(event.detail.apiResponse.fb_pxl_code);
+        }
+      }, false );
+    
+(function($) {
+	function setup_collapsible_submenus() {
+		$( ""<div class='sub-menu-toggle'></div>"" ).insertBefore( ""#main-header #mobile_menu.et_mobile_menu .menu-item-has-children > a"" );
+		$( ""#main-header #mobile_menu.et_mobile_menu .sub-menu-toggle"" ).click(function () {
+			$(this).toggleClass(""popped"");
+		});
+	}
+	$(document).ready(function() {
+		setup_collapsible_submenus();
+	});
+	$(window).load(function() {
+		setup_collapsible_submenus();
+	});
+})(jQuery);
+
+var SSL_NONCE_FRONTEND = ""21170a14dc""
+
+/* <![CDATA[ */
+var wpcf7 = {""api"":{""root"":""https:\/\/unica.com.br\/wp-json\/"",""namespace"":""contact-form-7\/v1""}};
+/* ]]> */
+
+window.addEventListener(""load"",function(){window.cookieconsent.initialise({
+    ""content"": {
+        ""deny"": ""Deny"",
+        ""dismiss"": ""Prosseguir"",
+        ""allow"": ""Allow"",
+        ""link"": ""Política de Cookies."",
+        ""href"": ""http:\/\/unica.com.br\/politica-de-cookies\/"",
+        ""message"": ""Este site coleta informações por meio de cookies, para melhorar sua experiência e navegação. Ao continuar, você concorda com nossa"",
+        ""policy"": ""Cookie Settings"",
+        ""savesettings"": ""Save Settings"",
+        ""linksecond"": ""Just another Link"",
+        ""hrefsecond"": ""https:\/\/yourdomain\/anotherLink""
+    },
+    ""type"": ""info"",
+    ""palette"": {
+        ""popup"": {
+            ""background"": ""#333"",
+            ""text"": ""#fff""
+        },
+        ""button"": {
+            ""background"": ""#fff"",
+            ""text"": ""#333"",
+            ""border"": """"
+        },
+        ""switches"": {
+            ""background"": """",
+            ""backgroundChecked"": """",
+            ""switch"": """",
+            ""text"": """"
+        }
+    },
+    ""position"": ""bottom"",
+    ""theme"": ""classic"",
+    ""cookietypes"": [
+        {
+            ""label"": ""Technical"",
+            ""checked"": ""checked"",
+            ""disabled"": ""disabled"",
+            ""cookie_suffix"": ""tech""
+        },
+        {
+            ""label"": ""Marketing"",
+            ""checked"": """",
+            ""disabled"": """",
+            ""cookie_suffix"": ""marketing""
+        }
+    ],
+    ""revokable"": ""0"",
+    ""cookie"": {
+        ""name"": ""cookieconsent_status"",
+        ""domain"": """",
+        ""expiryDays"": ""30""
+    },
+    ""container"": """",
+    ""customizedFont"": """",
+    ""dataLayerName"": ""dataLayer"",
+    ""onStatusChange"": ""1""
+})});
+
+/* <![CDATA[ */
+var DIVI = {""item_count"":""%d Item"",""items_count"":""%d Items""};
+var et_shortcodes_strings = {""previous"":""Anterior"",""next"":""Pr\u00f3ximo""};
+var et_pb_custom = {""ajaxurl"":""https:\/\/unica.com.br\/wp-admin\/admin-ajax.php"",""images_uri"":""https:\/\/unica.com.br\/wp-content\/themes\/UnicaNew\/images"",""builder_images_uri"":""https:\/\/unica.com.br\/wp-content\/themes\/UnicaNew\/includes\/builder\/images"",""et_frontend_nonce"":""974771ecb8"",""subscription_failed"":""Por favor, verifique os campos abaixo para verifique se voc\u00ea digitou as informa\u00e7\u00f5es corretas."",""et_ab_log_nonce"":""ce73484095"",""fill_message"":""Por favor, preencha os seguintes campos:"",""contact_error_message"":""Por favor, corrija os seguintes erros:"",""invalid"":""E-mail inv\u00e1lido"",""captcha"":""Captcha"",""prev"":""Anterior"",""previous"":""Anterior"",""next"":""Pr\u00f3ximo"",""wrong_captcha"":""Voc\u00ea digitou o n\u00famero captcha errado."",""wrong_checkbox"":""Checkbox"",""ignore_waypoints"":""no"",""is_divi_theme_used"":""1"",""widget_search_selector"":"".widget_search"",""ab_tests"":[],""is_ab_testing_active"":"""",""page_id"":""20288"",""unique_test_id"":"""",""ab_bounce_rate"":""5"",""is_cache_plugin_active"":""yes"",""is_shortcode_tracking"":"""",""tinymce_uri"":""""}; var et_builder_utils_params = {""condition"":{""diviTheme"":true,""extraTheme"":false},""scrollLocations"":[""app"",""top""],""builderScrollLocations"":{""desktop"":""app"",""tablet"":""app"",""phone"":""app""},""onloadScrollLocation"":""app"",""builderType"":""fe""}; var et_frontend_scripts = {""builderCssContainerPrefix"":""#et-boc"",""builderCssLayoutPrefix"":""#et-boc .et-l""};
+var et_pb_box_shadow_elements = [];
+var et_pb_motion_elements = {""desktop"":[],""tablet"":[],""phone"":[]};
+var et_pb_sticky_elements = [];
+/* ]]> */
+
+/* <![CDATA[ */
+var et_modules_wrapper = {""builderCssContainerPrefix"":""#et-boc"",""builderCssLayoutPrefix"":""#et-boc .et-l""};
+/* ]]> */"

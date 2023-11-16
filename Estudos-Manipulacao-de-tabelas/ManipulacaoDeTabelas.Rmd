@@ -1,0 +1,33 @@
+
+```{r}
+library(nycflights13)
+library(tidyverse)
+
+filter(flights, month == 1, day == 1)
+
+
+#1
+filter(flights, arr_delay >= 2)
+
+#2
+filter(flights, dest == "IAH" | dest == "HOU")
+
+#3
+filter( flights, carrier == "UN" | carrier == "AA" | carrier == "DL") 
+
+#4
+filter(flights,  month %in% c(7, 8, 9))
+
+#5
+filter(flights, arr_delay >= 2 & dep_delay == 0)
+
+#6
+filter(flights, dep_delay >= 1 & (sched_arr_time - arr_time) <= -30)
+
+#7
+filter(flights, arr_time >= 0 | arr_time <= 600)
+
+
+
+```
+
