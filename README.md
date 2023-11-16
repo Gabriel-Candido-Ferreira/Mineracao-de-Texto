@@ -3,7 +3,7 @@
 
 # Introdução
 
-Este projeto tem como objetivo realizar uma análise de texto na indústria da cana-de-açúcar, análisando noticias relacionadas a cana-de-açúcar, utilizando diversas técnicas de mineração de texto. A análise inclui a extração, manipulação e processamento de dados textuais, bem como a aplicação de técnicas como tokenização, n-gramas, retirada de stopwords, stemming, análise de sentimentos, e topic modeling.
+Este projeto tem como objetivo realizar uma análise de texto na indústria da cana-de-açúcar, análisando noticias relacionadas a cana-de-açúcar, utilizando diversas técnicas de mineração de texto, utilizando a linguagem R. A análise inclui a extração, manipulação e processamento de dados textuais, bem como a aplicação de técnicas como tokenização, n-gramas, retirada de stopwords, stemming, análise de sentimentos, e topic modeling.
 
 ## Extração e Manipulação de Dados
 
@@ -21,7 +21,7 @@ Foi realizada uma análise criteriosa para criar uma lista específica de stopwo
 
 ## Análise de Sentimentos
 
-Para a análise de sentimentos, uma lista específica foi criada, levando em consideração o vocabulário relacionado à cana-de-açúcar. Isso visa proporcionar uma análise mais precisa dos sentimentos expressos nos textos, especialmente voltada para produtores de cana-de-açúcar.
+Para a análise de sentimentos, uma lista específica foi criada, levando em consideração o vocabulário relacionado à cana-de-açúcar. Isso visa proporcionar uma análise mais precisa dos sentimentos expressos nos textos, especialmente voltada para produtores de cana-de-açúcar. Tal técnica vai ser implementada utilizando e manipulando bibliotecas na linguagem R.  
 
 # Conclusão
 
