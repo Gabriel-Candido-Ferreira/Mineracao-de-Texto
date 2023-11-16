@@ -1,5 +1,5 @@
 # Mineracao-de-Texto
-###Gabriel Cândido Ferreira Dias 
+### Gabriel Cândido Ferreira Dias 
 
 # Introdução
 
